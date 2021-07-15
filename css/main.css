@@ -2272,6 +2272,10 @@ img:hover {
 .post-reward div span {
   display: block;
 }
+.post-reward div:hover span {
+  animation: next-roll 0.1s infinite linear;
+  pointer-events: none;
+}
 .post-reward img {
   display: inline-block;
   margin: 0.8em 2em 0;
@@ -2523,6 +2527,14 @@ ul.breadcrumb li:last-child {
 .tag-cloud-10 {
   border-bottom-color: #111;
   color: #111;
+}
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: 0;
+}
+.gt-container .gt-popup .gt-action.is--active::before {
+  top: 0.7em;
 }
 .use-motion .animated {
   animation-fill-mode: none;
